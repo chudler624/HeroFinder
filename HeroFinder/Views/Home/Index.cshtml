@@ -1,0 +1,24 @@
+﻿
+<head><link rel="stylesheet" href="site.css". /></head>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+<body class="pg1">
+
+
+    <div class="search">
+        <form asp-controller="Home" asp-action="HeroPage">
+            <div id="searchbar" class="input-group mb-3">
+                <input type="text" name="hero" class="form-control" placeholder="Enter Hero or Villain">
+                <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Search</button>
+            </div>
+        </form>             
+    </div>
+
+</body>
+
+
+
+
+

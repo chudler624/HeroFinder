@@ -1,0 +1,99 @@
+
+
+.pg1 {
+    background-image: url('https://getwallpapers.com/wallpaper/full/f/2/1/430338.jpg'); 
+    background-size: 100%;
+}
+
+.search {
+    text-align: center;
+    margin: 350px 200px 0px 200px;
+    -webkit-border-radius: 25px;
+}
+
+#searchbar {
+    -webkit-border-radius: 25px;
+}
+
+.btn btn-outline-secondary{
+    background-color:darkblue;
+}
+
+/*Hero Page*/
+
+.pg2 {
+   /* background-image: url('https://img.freepik.com/premium-vector/comic-cartoon-background-with-city-silhouette_530597-1539.jpg?w=996');
+    back*/
+    
+}
+
+#picture{
+    text-align:center;
+    margin:10px 10px 10px 10px;
+    
+}
+
+#pic{
+    -webkit-border-radius:25px 25px;
+    border:2px solid black;
+    
+}
+
+#name{
+    text-align:center;
+    font-family:'Comic Sans MS';
+    font-size: 40px;
+    margin: 10px 10px 10px 10px;
+    color:red;
+    
+
+}
+
+.powerstats{
+    font-family:'Comic Sans MS';
+    margin:15px 15px 15px 0px;
+    font-size:16px;
+    font-weight:700;
+}
+
+td{
+    height:fit-content;
+    text-align:left;
+    
+}
+
+.infotag{
+    font-family:'Comic Sans MS';
+    font-size:16px;
+    font-weight:700;
+
+}
+
+#first{
+    display:inline;
+    width:400px;
+}
+
+#answer{
+    font-weight:500;
+    font-size:12px;
+    margin:0px 0px 0px 25px;
+    display:block;
+    height: fit-content;
+    width:400px;
+    color:black
+
+
+}
+
+#heading{
+    font-size:28px;
+    font-weight:900;
+    color:blue
+}
+
+.border-top footer text-muted {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}

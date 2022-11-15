@@ -1,0 +1,26 @@
+﻿@model List<HeroModel>;
+
+ @foreach(var item in Model)
+{
+    
+<table class="table">
+  
+    <tbody>
+        <tr>
+            <td>Creator</td>
+            <td>@item.Publisher</td>
+        </tr>
+        <tr>
+            <td>Aliases</td>
+            @foreach(var alias in item.Aliases){<td><div id="answer">@alias</div></td>}
+        </tr>
+        <tr>
+            <td colspan="2">Place Of Birth</td>
+            <td>@item.PlaceOfBirth</td>
+        </tr>
+    </tbody>
+</table>
+
+}
+
+
