@@ -22,8 +22,7 @@
 /*Hero Page*/
 
 .pg2 {
-   /* background-image: url('https://img.freepik.com/premium-vector/comic-cartoon-background-with-city-silhouette_530597-1539.jpg?w=996');
-    back*/
+   background-color:lightgray;
     
 }
 
@@ -49,18 +48,16 @@
 
 }
 
-.powerstats{
+#powerstats{
     font-family:'Comic Sans MS';
-    margin:15px 15px 15px 0px;
-    font-size:16px;
-    font-weight:700;
+    width:25%;
 }
 
-td{
+/*td{
     height:fit-content;
     text-align:left;
     
-}
+}*/
 
 .infotag{
     font-family:'Comic Sans MS';
@@ -69,12 +66,34 @@ td{
 
 }
 
+#origin {
+    font-family: 'Comic Sans MS';
+    width: 25%;
+}
+
+#connections {
+    font-family: 'Comic Sans MS';
+    width: 25%;
+}
+
+#appearance {
+    font-family: 'Comic Sans MS';
+    width: 25%;
+}
+
+td {
+    height: max-content;
+    font-family: 'Comic Sans MS';
+    font-size:12px;
+    font-weight:500;
+}
+
 #first{
     display:inline;
     width:400px;
 }
 
-#answer{
+/*#answer{
     font-weight:500;
     font-size:12px;
     margin:0px 0px 0px 25px;
@@ -84,7 +103,7 @@ td{
     color:black
 
 
-}
+}*/
 
 #heading{
     font-size:28px;

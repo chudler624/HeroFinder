@@ -12,119 +12,125 @@
         <div id="name">@item.Name</div>
 
 
-        <div class="powerstats">
+        
         <div id="heading">Power Stats</div>
 
-        @*Combat*@
-        <div><label for="Combat">Combat:</label><progress id="combat" value="@item.Combat" max="100"> @item.Combat% </progress> @item.Combat%</div>
+        <table class="table" id="powerstats">
+            <tr>
+                <th scope="row"><label for="Combat">Combat:</label></th>
+                    <td><progress id="combat" value="@item.Combat" max="100">@item.Combat% </progress></td>
+                    <td>@item.Combat%</td>
+            </tr>
+            <tr>
+                <th scope="row"><label for="Intelligence">Intelligence:</label></th>
+                    <td><progress id="intelligence" value="@item.Inteligence" max="100"> @item.Inteligence% </progress> </td>
+                    <td>@item.Inteligence%</td>
+            </tr>
+            <tr>
+                <th scope="row"><label for="Strength">Strength:</label></th>
+                    <td><progress id="strength" value="@item.Strength" max="100"> @item.Strength% </progress></td>
+                    <td>@item.Strength%</td>
+            </tr>
+            <tr>
+                <th scope="row"><label for="Speed">Speed:</label></th>
+                    <td><progress id="speed" value="@item.Speed" max="100"> @item.Speed% </progress></td>
+                    <td>@item.Speed%</td>
+            </tr>
+            <tr>
+                <th scope="row"><label for="Durability">Durability:</label></th>
+                    <td><progress id="durability" value="@item.Durability" max="100"> @item.Durability% </progress></td>
+                    <td>@item.Durability%</td>
+            </tr>
+            <tr>
+                <th scope="row"><label for="Power">Power:</label></th>
+                    <td><progress id="power" value="@item.Power" max="100"> @item.Power% </progress></td>
+                    <td>@item.Power%</td>
+            </tr>
+        </table>
+                 
 
-        @* Intelligence*@
-        <div><label for="Intelligence">Intelligence:</label><progress id="intelligence" value="@item.Inteligence" max="100"> @item.Inteligence% </progress> @item.Inteligence%</div>
-
-        @* Strength*@
-        <div><label for="Strength">Strength:</label><progress id="strength" value="@item.Strength" max="100"> @item.Strength% </progress>@item.Strength%</div>
-
-        @* Speed*@
-        <div><label for="Speed">Speed:</label><progress id="speed" value="@item.Speed" max="100"> @item.Speed% </progress>@item.Speed%</div>
-
-        @* Durability*@
-        <div><label for="Durability">Durability:</label><progress id="durability" value="@item.Durability" max="100"> @item.Durability% </progress>@item.Durability%</div>
-
-         @*Power*@
-         <div><label for="Power">Power:</label><progress id="power" value="@item.Power" max="100"> @item.Power% </progress>@item.Power%</div>
-
-
-        </div>
-
-
-
-
-
-        <div class="infotag">
+        
 
             <div id="heading">Origin</div>
-            <table class="Origin">
-                <tr>
-                    <td id="first">Creator:</td>
-                    <td><div id="answer"> @item.Publisher</div></td>
-                </tr>
-                <tr>
+            <table class="table" id="origin">
 
-                </tr>
-                <tr>
-                    <td id="first">Full Name:</td>
-                    <td><div id="answer"> @item.FullName</div></td>
-                </tr>
-                <tr>
-
-                </tr>
-             
-                <tr>
-                    <td id="first">Aliases:</td>
-                    @foreach(var alias in item.Aliases){<td><div id="answer">@alias</div></td>}
-                </tr>
-                <tr>
-                    <td id="first">Place Of Birth:</td>
-                    <td><div id="answer">@item.PlaceOfBirth</div></td>
-                </tr>
-                <tr>
-                    <td id="first">First Appearance:</td>
-                    <td><div id="answer">@item.FirstAppearance</div></td>
-                </tr>
-                <tr>
-                    <td id="first">Alignment:</td>
-                    <td><div id="answer">@item.Alignment</div></td>
-                </tr>
+                 <tr>
+                    <th scope="row">Creator:</th>
+                        <td>@item.Publisher</td>
+                 </tr>
+                 <tr>
+                    <th scope="row">Full Name:</th>
+                        <td>@item.FullName</td>
+                 </tr>
+                 <tr>
+                    <th scope="row">Place of Birth:</th>
+                        <td>@item.PlaceOfBirth</td>
+                 </tr>
+                 <tr>
+                    <th scope="row">First Appearance</th>
+                        <td>@item.FirstAppearance</td>
+                 </tr>
+                 <tr>
+                    <th scope="row">Alignment:</th>
+                        <td>@item.Alignment</td>
+                 </tr>
+                 <tr>
+                    <th scope="row">Aliases</th>
+                        @foreach(var alias in item.Aliases){<td>@alias</td>}
+                 </tr>
             </table>
-
+            
             <div id="heading">Connections</div>
-            <table id="Connections">
-                <tr>
-                    <td id="first">Occupation:</td>
-                    <td><div id="answer">@item.Occupation</div></td>
-                </tr>
-                <tr>
-                    <td id="first">Base:</td>
-                    <td><div id="answer">@item.Base</div></td>
-                </tr>
-                <tr>
-                    <td id="first">Relatives:</td>
-                    <td><div id="answer">@item.Relatives</div></td>
-                </tr>
 
+            <table class="table" id="connections">
+
+                 <tr>
+                    <th scope="row">Occupation:</th>
+                        <td>@item.Occupation</td>
+                 </tr>
+                 <tr>
+                    <th scope="row">Base:</th>
+                        <td>@item.Base</td>
+                 </tr>
+                 <tr>
+                    <th scope="row">Relatives:</th>
+                        <td>@item.Relatives</td>
+                 </tr>
             </table>
-
+                      
             <div id="heading">Appearance</div>
 
-            <table id="appearance">
-                <tr>
-                    <td id="first">Gender:</td><td>
-                        <div id="answer">@item.Gender</div></td>
-                </tr>
-                <tr>
-                    <td id="first">Species/Type:</td>
-                    <td><div id="answer">@item.Race</div></td>
-                </tr>
-                <tr>
-                    <td id="first">Height:</td>
-                    <td><div id="answer">@item.Height[0]</div></td>
-                </tr>
-                <tr>
-                    <td id="first">Weight</td>
-                    <td><div id="answer">@item.Weight[0]</div></td>
-                </tr>
-                <tr>
-                    <td id="first">Eye Color</td>
-                    <td><div id="answer">@item.EyeColor</div></td>
-                </tr>
-                <tr>
-                    <td id="first">Hair Color:</td>
-                    <td><div id="answer">@item.HairColor</div></td>
-                </tr>
+            <table class="table" id="appearance">
+
+                 <tr>
+                    <th scope="row">Gender:</th>
+                        <td>@item.Gender</td>
+                 </tr>
+                 <tr>
+                    <th scope="row">Species/Type:</th>
+                        <td>@item.Race</td>
+                 </tr>
+                 <tr>
+                    <th scope="row">Height:</th>
+                        <td>@item.Height[0]</td>
+                 </tr>
+                 <tr>
+                    <th scope="row">Weight:</th>
+                        <td>@item.Weight[0]</td>
+                 </tr>
+                 <tr>
+                    <th scope="row">Eye Color</th>
+                        <td>@item.EyeColor</td>
+                 </tr>
+                 <tr>
+                    <th scope="row">Hair Color:</th>
+                        <td>@item.HairColor</td>
+                 </tr>
             </table>
+                       
 
 
-        </div>
+        
     }       
 </body>
          
